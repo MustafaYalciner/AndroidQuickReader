@@ -16,8 +16,7 @@ public class TextViewer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_viewer);
-        final Intent currentIntent = getIntent();
-        final String[] words = currentIntent.getStringArrayExtra("key");
+        final String[] words = getIntent().getStringArrayExtra("key");
         final EditText editText = findViewById(R.id.editText2);
         final Timer timer = new Timer();
 
