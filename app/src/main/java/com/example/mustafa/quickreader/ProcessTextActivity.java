@@ -13,6 +13,5 @@ public class ProcessTextActivity extends Activity {
         String[] words = text.toString().split(" ");
         Intent intent = new Intent(this, TextViewer.class);
         startActivity(intent.putExtra("key",words));
-
     }
 }
